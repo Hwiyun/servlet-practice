@@ -1,4 +1,3 @@
-<%@page import="com.douzone.guestbook.dao.GuestbookDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 <head>
@@ -9,7 +8,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form method="post" action="/guestbook01/delete.jsp">
+	<form method="post" action="<%=request.getContextPath() %>/delete.jsp">
 		<input type='hidden' name="no" value="<%=no %>">
 		<table>
 			<tr>

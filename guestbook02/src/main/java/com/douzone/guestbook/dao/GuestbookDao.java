@@ -22,7 +22,7 @@ public class GuestbookDao {
 		try {
 			conn = getConnection();
 			
-			String sql ="select no, name, password, message, reg_date from guestbook order by no desc";
+			String sql ="select no, name, password, message, reg_date from guestbook order by reg_date desc";
 			pstmt = conn.prepareStatement(sql);
 
 			rs = pstmt.executeQuery();
@@ -97,7 +97,7 @@ public class GuestbookDao {
 	public void deleteByNoPassword(long number, String password) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
-		
+
 		try {
 			conn = getConnection();
 			
