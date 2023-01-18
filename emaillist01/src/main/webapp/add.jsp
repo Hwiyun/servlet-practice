@@ -6,7 +6,7 @@
 
 	String firstName = request.getParameter("firstName");
 	String lastName = request.getParameter("lastName");
-	String email = request.getParameter("email");
+	String email = request.getParameter("Email");
 
 	EmaillistVo vo = new EmaillistVo();
 	vo.setFirstName(firstName);
