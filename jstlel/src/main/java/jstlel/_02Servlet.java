@@ -36,15 +36,13 @@ public class _02Servlet extends HttpServlet {
 		vo2.setNo(2L);
 		vo2.setName("둘리2");
 
+		request.getSession(true).setAttribute("vo", vo2);
+		
 		// Application scope
 		UserVo vo3 = new UserVo();
 		vo3.setNo(3L);
 		vo3.setName("둘리3");
 		request.getServletContext().setAttribute("vo", vo3);
-		
-		
-		request.getSession(true).setAttribute("vo", vo2);
-		
 		
 		request
 			.getRequestDispatcher("/WEB-INF/views/02.jsp")
