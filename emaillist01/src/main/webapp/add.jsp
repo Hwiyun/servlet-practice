@@ -2,7 +2,7 @@
 <%@page import="com.douzone.emaillist.dao.EmaillistDao"%>
 <%@page import="com.douzone.emaillist.vo.EmaillistVo"%>
 <%
-	request.setCharacterEncoding("utf-8");
+request.setCharacterEncoding("utf-8");
 
 	String firstName = request.getParameter("firstName");
 	String lastName = request.getParameter("lastName");
